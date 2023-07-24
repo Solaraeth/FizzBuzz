@@ -1,12 +1,17 @@
 def fizzbuzz():
-    # ask user for input
+    # create variable for user input
     i = None
+    # validate user input
     while i is None:
         try:
+            # ask user for input
             i = int(input("Pick a number: "))
         except ValueError: 
             print("Error: Value is not an integer.")
+    
+    # iterate through each value between 1 and the user input
     for x in range(i):
+        # increase the value of i by 1 to ensure first value is 1
         x = x+1
         # if x is a multiple of 3 and 5 print fizzbuzz
         if x % 3 == 0 and x % 5 == 0:
@@ -19,5 +24,6 @@ def fizzbuzz():
             print("buzz")
         # else print x
         else: print(x)
-# value to count up to
+
+# execute function
 fizzbuzz()
