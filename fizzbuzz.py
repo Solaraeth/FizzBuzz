@@ -1,7 +1,11 @@
 def fizzbuzz():
     # ask user for input
-    i = input("Pick a number: ")
-    i = int(i)
+    i = None
+    while i is None:
+        try:
+            i = int(input("Pick a number: "))
+        except ValueError: 
+            print("Error: Value is not an integer.")
     for x in range(i):
         x = x+1
         # if x is a multiple of 3 and 5 print fizzbuzz
