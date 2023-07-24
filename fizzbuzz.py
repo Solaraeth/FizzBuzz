@@ -1,4 +1,7 @@
-def fizzbuzz(i):
+def fizzbuzz():
+    # ask user for input
+    i = input("Pick a number: ")
+    i = int(i)
     for x in range(i):
         x = x+1
         # if x is a multiple of 3 and 5 print fizzbuzz
@@ -13,4 +16,4 @@ def fizzbuzz(i):
         # else print x
         else: print(x)
 # value to count up to
-fizzbuzz(15)
+fizzbuzz()
